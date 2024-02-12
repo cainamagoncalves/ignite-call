@@ -34,4 +34,5 @@ export const Form = styled(Box, {
 
 export const FormError = styled(Text, {
   color: '#F75A68',
+  marginBottom: '$4',
 })
