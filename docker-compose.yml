@@ -1,12 +1,10 @@
 services:
-  postgres: 
-    image: postgres
-    container_name: ignite-call
+  mysql: 
+    image: mysql
+    container_name: ignite-call-mysql
     ports:
-      - 5432:5432
+      - 3306:3306
     environment:
-      POSTGRES_DB: ignitecall
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: docker
+      MYSQL_ROOT_PASSWORD: docker
     volumes:
-      - './data/pg:/data/postgres'
+      - './data/mysql:/data/mysql'
