@@ -79,8 +79,6 @@ export function Calendar({
     },
   })
 
-  console.log(blockedDates)
-
   const calendarWeeks = useMemo(() => {
     if (!blockedDates) {
       return []
